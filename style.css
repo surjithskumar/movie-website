@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* paste font family*/
+}
+
+/*--------NAVIGATION BAR---------------*/
+nav{
+    background-color: aliceblue;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: sticky;
+    top: 0; /*????????????????*/
+    z-index: 1;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    margin: 10px;
+    color: rgb(0, 0, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    text-shadow: 2px 4px 6px black;
+    font-size: 22px;
+}
+/*----------------------------------------*/
+
+
+/*--------------H2------------------------*/
+h2{
+    color: brown;
+    background-color: beige;
+    text-align: center;
+}
+/*---------------------------------------*/
+
+
+/*-----------HOME-SECTION-----------------*/
+h1:hover{
+    color: dodgerblue;
+    text-shadow: 2px 2px 2px rgb(0, 255, 98);
+}
+span{
+    color: rgb(255, 132, 0);
+    font-size: 30px;
+}
+.overlay{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    color: rgb(0, 225, 255);
+}
+.main{
+    border: 3px inset rgb(239, 239, 239);
+    color: rgb(217, 255, 0);
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    height: 90px;
+    left: 80%;
+    margin-top: 25%;
+    box-shadow: 2px 2px 4px dodgerblue;
+}
+.main:hover{
+    scale: 1.05;
+}
+#home{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+#home::before{
+    content:"";
+    background-image: url(/Images/Vijaysethupathi.jpg);
+    height: 100%;
+    background-size:cover;
+}
+/*--------------------------------------------------------------*/
+
+/*--------Video-----------*/
+video{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+.cv{
+    background-color: cadetblue;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 47%;
+    border-radius: 20px;   
+    /*filter dropshadow venamekil...*/
+}
+/*------------------------*/
+
+
+/*-----------ABOUT-----------*/
+.pic{
+    display: flex;
+}
+.pic img{
+    width: 300px;
+    height: 200px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.intro h4{
+    color: blueviolet;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.intro p{
+    text-align: justify;
+    padding-left: 10px;
+    margin: 10pxs;
+    padding-right: 10px;
+}
+/*-----------------------------*/
+
+
+/*----------------CAST--------------------*/
+#cast{
+    box-shadow: 2px 4px 6px rgb(43, 220, 226);
+    margin: 20px;
+}
+.row1{
+    background-color: darkgray;
+    width: 100%;
+    height: 400px; /*Change accordingly*/
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.row2{
+    background-color: darkgray;
+    width: 100%;
+    height: 470px; /*Change accordingly*/
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.col{
+    background-color: black;
+    width: 400px;
+    height: 400px; /* Change accordingly*/
+    margin: 10px;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 3%;
+    padding: 10px;
+}
+img{
+    padding-top: 10x;
+    border-radius: 10px;
+    width: 280px;
+    height: 350px;
+}
+img:hover{
+    box-shadow: 5px 5px chartreuse;
+}
+/*.....................................*/
+
+
+/*-----------OTT APPS----------------*/
+.row{
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+.box{
+    width: 350px;
+    height: 370px;
+    border: 3ppx ridge blueviolet;
+    margin: 5px;
+    text-align: center;
+    background: linear-gradient(to top,rgb(183, 106, 255)50%,#a2ff00 50%);
+    background-size: 100% 200%;
+    transition: all 1.01s;
+}
+.box img{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+.box:hover{
+    background-position: left bottom;
+    filter: drop-shadow(3px 3px 20px rgb(255, 0, 0));
+}
+.box p{
+    text-align: justify;
+    padding: 5px;
+}
+.box a{
+    padding-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+/*------------------------------------------------------------*/
+
+/*------------REVIEW-------------*/
+form{
+    width: 500px;
+    margin-left: 500px;
+}
+.input{
+    width: 100%;
+    margin: 10px;
+}
+button{
+    color: azure;
+    background-color: black;
+    cursor: pointer;
+    padding: 5px;
+}
+/*------------------------------*/
+
+
+/*------------FOOTER---------------*/
+.frow{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+.fcol img{
+    height: 70px;
+    width: 70px;
+}
+.fcol img:hover{
+    scale: 1.05;
+}
+
+/*---------------------------------*/
+
+
+
+/*----------scrollbar--------------*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: green;
+    border-radius: 10px;
+  }
+
+/*-----------------------------------*/
